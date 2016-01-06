@@ -1,0 +1,11 @@
+new.html.erb
+<h1>Notes</h1>
+<%= link_to("Back to Notes", entries_path) %>
+<%= form_for(@entry) do |form| %>
+  <p><%= form.label("Subject") %></p>
+  <p><%= form.text_field("subject") %></p>
+  <p><%= form.label("Text") %></p>
+  <p><%= form.text_area("contents") %></p>
+  <p><%= form.submit %></p>
+<% end %>
+</div>

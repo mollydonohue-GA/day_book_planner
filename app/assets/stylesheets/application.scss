@@ -1,0 +1,52 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+header{
+	background:
+	url(https://images.unsplash.com/photo-1437419764061-2473afe69fc2?crop=entropy&dpr=2&fit=crop&fm=jpg&h=600&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1150); 
+	background-size: cover;
+	height: 530px;
+}
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+h1 {
+  
+  margin: 0;
+  font-size: 4rem;
+  white-space: nowrap;
+}
+h2 {
+  font-size: 2rem;
+}
+p {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+main {
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.navbar {
+	margin: 0;
+	size: 50px;
+}
+.container {
+
+}
+.row {
+	padding-left: 30px;
+  position: absolute;
+ 
+  text-align: center;
+}
+.btn {
+	margin-top: 25px;
+}
