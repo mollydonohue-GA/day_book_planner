@@ -18,7 +18,6 @@
 
 (function(){
 
-    // List your words here:
     var words = [
         'thoughts.',
         'tasks.',
@@ -32,8 +31,7 @@
         $('#changing-word').fadeOut(function(){
             var word = words[i=(i+1)%words.length]
             $(this).html(word).fadeIn();
-            $(this).css('textColor', 'orange'); // or color of choice
-
+            
             if (word == 'LIFE.'){
              delay = 5;
             }else {
@@ -44,3 +42,36 @@
     }, delay * 2500);
 
 })();
+/////////////////////////////////////////
+
+// (function(){
+
+//     setInterval(function(){ 
+
+//      var words = [
+//         'thoughts.',
+//         'tasks.',
+//         'schedule.',
+//         'photos.',
+//         'LIFE.'
+//         ], i = 0,
+//          delay = 1;
+
+//         if (word == 'LIFE.'){
+//             $('#changing-word').fadeOut(function(){
+//                 var word = words[i=(i+1)%words.length]
+//                 $(this).html(word).fadeIn();   
+//                 delay = 5;
+//             });
+//         }
+//         else{
+//             $('#changing-word').fadeOut(function(){
+//                 var word = words[i=(i+1)%words.length]
+//                 $(this).html(word).fadeIn(); 
+//                 delay = 1;
+//             });
+//         }
+//        //  seconds
+//     }, delay * 2500);
+
+// })();

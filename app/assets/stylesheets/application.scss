@@ -1,6 +1,12 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
-
+.logo{
+  text-decoration: none;
+}
+.log_in{
+  text-align: right;
+  padding: 0px;
+}
 header{
 	background:
 	url(https://images.unsplash.com/photo-1437419764061-2473afe69fc2?crop=entropy&dpr=2&fit=crop&fm=jpg&h=600&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1150); 
@@ -14,6 +20,9 @@ header{
   transform: translate(-50%, -50%);
   color: white;
   text-align: center;
+}
+body{
+  padding-top: 65px; 
 }
 h1 {
   
@@ -30,8 +39,33 @@ p {
 }
 
 main {
-  max-width: 500px;
-  margin: 20px auto;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.how_it_works{
+  padding-top: 30px;
+}
+
+.col-md-3{
+    
+}
+
+.icon_description{
+  padding-top: 55px;  
+}
+
+.splash_sign_up{
+  text-align: center;
+  padding-top: 75px;
+}
+
+.field{
+  padding-top: 15px;
+}
+
+.actions{
+  padding-top: 20px;
 }
 
 .navbar {
@@ -42,11 +76,17 @@ main {
 
 }
 .row {
-	padding-left: 30px;
-  position: absolute;
- 
+  width: 100%;
   text-align: center;
+  margin: 0;
+  padding-top: 5%;
 }
 .btn {
 	margin-top: 25px;
+}
+.bottom_login{
+  padding-bottom: 20px;
+}
+.copyright{
+  font-size: 12px;
 }

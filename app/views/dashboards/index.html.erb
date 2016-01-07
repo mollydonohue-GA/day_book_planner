@@ -1,11 +1,75 @@
-<div class="row">
-	<div class="col-md-3">
-		<span style="font-size:6em;" class="text-center glyphicon glyphicon-pencil" aria-hidden="true"></span>
-	</div>
-	<div class="col-md-3">	
-		<span style="font-size:6em;" class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
-	</div>
-	<div class="col-md-3">
-		<span style="font-size:6em;" class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
-	</div>
+<header>
+  <div class="title">
+   		<h1>Bring order to your</h1>
+    	<h1><span id="changing-word">thoughts.</span></h1>
+    	<br>
+    	<p>
+    		<button type="button" class="btn btn-default btn-lg"><%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %></button> 
+    	</p>
+  </div>
+
+</header>
+
+<main>
+  <h1 class="how_it_works">HOW IT WORKS</h1>
+</main>
+
+  <div class="row">
+    <div class="col-md-3">
+      <span style="font-size:6em;" class="glyphicon glyphicon-pencil" id="test" aria-hidden="true"></span>
+      <p class="icon_description">Record all of your thoughts.</p>
+    </div>
+    
+    <div class="col-md-3">  
+      <span style="font-size:6em;" class="glyphicon glyphicon-list-alt" id="test" aria-hidden="true"></span>
+      <p class="icon_description">Keep track of your tasks and lists.</p>
+    </div>
+    
+    <div class="col-md-3">
+      <span style="font-size:6em;" class="glyphicon glyphicon-calendar" id="test" aria-hidden="true"></span>
+      <p class="icon_description">Stay on top of your busy schedule.</p>
+    </div>
+
+   <div class="col-md-3">
+      <span style="font-size:6em;" class="glyphicon glyphicon-camera" id="test" aria-hidden="true"></span>
+      <p class="icon_description">Sort all of your photos.</p>
+    </div>
+  </div>
+<div class="splash_sign_up">  
+<h2>Sign up NOW!</h2>
+
+<form class="new_user" id="new_user" action="/users" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="9ppIk5mZuNuSgYnVAteuFq1UFEUxuHBLxEKz3b5ePXfVrsHeUre7qwz6g+d7b64HIL0zmdfnxWSv01K+iSP3GQ==" />
+  
+  
+  <div class="field">
+    <label for="user_email">Email</label><br />
+    <input autofocus="autofocus" type="email" value="" name="user[email]" id="user_email" />
+  </div>
+
+  <div class="field">
+    <label for="user_password">Password</label>
+    <em>(8 characters minimum)</em>
+    <br />
+    <input autocomplete="off" type="password" name="user[password]" id="user_password" />
+  </div>
+
+  <div class="field">
+    <label for="user_password_confirmation">Password confirmation</label><br />
+    <input autocomplete="off" type="password" name="user[password_confirmation]" id="user_password_confirmation" />
+  </div>
+
+  <div class="actions">
+    <input type="submit" name="commit" value="Sign up" />
+  </div>
+</form>
+  <a href="/users/sign_in" class="bottom_login">Log in</a><br />
 </div>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">
+        <div class="copyright">© Molly Donohue. All Rights Reserved</div>
+      </a>
+    </div>
+  </div>
+</nav>
