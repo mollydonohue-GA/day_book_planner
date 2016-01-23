@@ -13,6 +13,8 @@ class EntriesController < ApplicationController
 
 	def new
 		@entry = Entry.new
+		@entry.user = current_user
+		#needed for hidden to work in form
 	end
 
 	def create
