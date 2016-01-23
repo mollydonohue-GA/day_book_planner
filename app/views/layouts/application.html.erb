@@ -20,7 +20,17 @@
       <% end %>
   </div>
   </div>
-</nav>
+
+</nav>  
+<% if user_signed_in? %>
+<div class="container">
+  <ul class="nav nav-tabs">
+  <li role="presentation" class="active"><%= link_to "home", dashboards_path, :class => 'navbar-link'  %></li>
+  <li role="presentation"><%= link_to "Notes", entries_path, :class => 'navbar-link'  %></li></li>
+  <li role="presentation"><a href="#">Lists</a></li>
+</ul>
+</div>
+<% end %>
      <% if notice %>
     <p class="alert alert-success"><%= notice %></p>
   <% end %>
@@ -28,6 +38,7 @@
     <p class="alert alert-danger"><%= alert %></p>
   <% end %>
 <%= yield %>
+
 </div>
 
 </body>

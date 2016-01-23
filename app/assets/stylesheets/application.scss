@@ -6,13 +6,16 @@
 .log_in{
   text-align: right;
   padding: 0px;
+  font-size: 15px;
 }
 header{
 	background:
 	url(https://images.unsplash.com/photo-1437419764061-2473afe69fc2?crop=entropy&dpr=2&fit=crop&fm=jpg&h=600&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1150); 
 	background-size: cover;
 	height: 530px;
+  padding-top: 0px;
 }
+
 .title {
   position: absolute;
   top: 50%;
@@ -20,6 +23,13 @@ header{
   transform: translate(-50%, -50%);
   color: white;
   text-align: center;
+}
+.header_notes{
+  background:
+  url(https://images.unsplash.com/photo-1430165558479-de3cf8cf1478?crop=entropy&dpr=2&fit=crop&fm=jpg&h=575&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1300); 
+  background-size: cover;
+  height: 200px;
+  padding-top: 0px;
 }
 body{
   padding-top: 65px; 
@@ -44,15 +54,20 @@ main {
 }
 
 .how_it_works{
-  padding-top: 30px;
+  padding-top: 20px;
 }
 
 .col-md-3{
     
 }
 
+.icon_title{
+  padding-top: 15px;  
+}
+
 .icon_description{
-  padding-top: 55px;  
+  padding-top: 2px;  
+  padding-bottom: 50px;
 }
 
 .splash_sign_up{
@@ -84,9 +99,17 @@ main {
 .btn {
 	margin-top: 25px;
 }
-.bottom_login{
+
+.btn_center{
+  text-align: center;
   padding-bottom: 20px;
 }
+
+.sign_up_now_btn{
+  text-align: center;
+  padding-bottom: 50px;
+}
+
 .copyright{
   font-size: 12px;
 }

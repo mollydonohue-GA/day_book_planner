@@ -15,4 +15,10 @@ class EntriesController < ApplicationController
 		@entry = Entry.new
 	end
 
+	def create
+	  entry_params = params["entry"].permit("subject", "contents", "user_id")
+	  entry = Entry.create(entry_params)
+	  redirect_to(entries_path(entry))
+	end	
+
 end
